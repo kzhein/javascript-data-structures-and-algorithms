@@ -1,14 +1,14 @@
-# Doubly Linked List
+## Doubly Linked List
 
-## Visualization
+### Visualization
 
 https://visualgo.net/en/list
 
-## Comparisons with Singly Linked Lists
+### Comparisons with Singly Linked Lists
 
 Doubly Linked List offer more flexibility but uses more memory.
 
-## Big O of Doubly Linked Lists
+### Big O of Doubly Linked Lists
 
 Insertion - O(1)
 

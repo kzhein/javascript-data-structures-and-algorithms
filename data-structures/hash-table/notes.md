@@ -1,6 +1,6 @@
-# Hash Table
+## Hash Table
 
-## Hash Table implementations that are built-in to programming languages
+### Hash Table implementations that are built-in to programming languages
 
 `Python` has `Dictionaries`
 
@@ -10,7 +10,7 @@
 
 `Ruby` has `Hashes`
 
-## Big O of Hash Tables
+### Big O of Hash Tables
 
 Insert - O(1)
 

@@ -1,10 +1,10 @@
-# Singly Linked List
+## Singly Linked List
 
-## Visualization
+### Visualization
 
 https://visualgo.net/en/list
 
-## Comparisons with Arrays
+### Comparisons with Arrays
 
 **Lists**
 
@@ -18,7 +18,7 @@ https://visualgo.net/en/list
 - Insertion and deletion can be expensive
 - Can quickly be accessed at a specific index
 
-## Big O of Singly Linked Lists
+### Big O of Singly Linked Lists
 
 Insertion - O(1)
 
