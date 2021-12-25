@@ -1,5 +1,7 @@
 https://rithmschool.github.io/function-timer-demo/
 
+https://www.bigocheatsheet.com/
+
 ## Simplifying Big O Expressions
 
 ### Constants don't matter
