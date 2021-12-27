@@ -2,27 +2,23 @@
 //   "root": {
 //     "value": 10,
 //     "left": {
-//       "value": 5,
+//       "value": 6,
 //       "left": {
-//         "value": 2,
+//         "value": 3,
 //         "left": null,
 //         "right": null
 //       },
 //       "right": {
-//         "value": 7,
+//         "value": 8,
 //         "left": null,
 //         "right": null
 //       }
 //     },
 //     "right": {
-//       "value": 13,
-//       "left": {
-//         "value": 11,
-//         "left": null,
-//         "right": null
-//       },
+//       "value": 15,
+//       "left": null,
 //       "right": {
-//         "value": 16,
+//         "value": 20,
 //         "left": null,
 //         "right": null
 //       }
@@ -92,4 +88,33 @@ class BinarySearchTree {
 
     return current;
   }
+
+  // Tree Traversal - Breadth First Search
+  BFS() {
+    let node = null;
+    const data = [],
+      queue = [];
+
+    queue.push(this.root);
+
+    while (queue.length) {
+      node = queue.shift();
+      data.push(node.value);
+      if (node.left) queue.push(node.left);
+      if (node.right) queue.push(node.right);
+    }
+
+    return data;
+  }
 }
+
+//        10
+//     6     15
+//   3   8      20
+const tree = new BinarySearchTree();
+tree.insert(10);
+tree.insert(6);
+tree.insert(15);
+tree.insert(3);
+tree.insert(8);
+tree.insert(20);
