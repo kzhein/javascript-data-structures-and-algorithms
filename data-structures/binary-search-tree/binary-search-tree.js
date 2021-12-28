@@ -106,6 +106,21 @@ class BinarySearchTree {
 
     return data;
   }
+
+  // Tree Traversal - Depth First Search (PreOrder)
+  DFSPreOrder() {
+    const data = [];
+
+    function traverse(node) {
+      data.push(node.value);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+    }
+
+    traverse(this.root);
+
+    return data;
+  }
 }
 
 //        10
@@ -118,3 +133,6 @@ tree.insert(15);
 tree.insert(3);
 tree.insert(8);
 tree.insert(20);
+
+console.log(tree.BFS()); // [ 10, 6, 15, 3, 8, 20 ]
+console.log(tree.DFSPreOrder()); // [ 10, 6, 3, 8, 15, 20 ]
