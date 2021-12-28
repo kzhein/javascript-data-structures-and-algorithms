@@ -121,6 +121,21 @@ class BinarySearchTree {
 
     return data;
   }
+
+  // Tree Traversal - Depth First Search (PostOrder)
+  DFSPostOrder() {
+    const data = [];
+
+    function traverse(node) {
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+      data.push(node.value);
+    }
+
+    traverse(this.root);
+
+    return data;
+  }
 }
 
 //        10
@@ -136,3 +151,4 @@ tree.insert(20);
 
 console.log(tree.BFS()); // [ 10, 6, 15, 3, 8, 20 ]
 console.log(tree.DFSPreOrder()); // [ 10, 6, 3, 8, 15, 20 ]
+console.log(tree.DFSPostOrder()); // [ 3, 8, 6, 20, 15, 10 ]
