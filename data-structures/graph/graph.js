@@ -61,6 +61,29 @@ class Graph {
 
     return result;
   }
+
+  depthFirstIterative(start) {
+    const stack = [start];
+    const result = [];
+    const visited = {};
+    let currentVertex;
+
+    visited[start] = true;
+
+    while (stack.length) {
+      currentVertex = stack.pop();
+      result.push(currentVertex);
+
+      this.adjacencyList[currentVertex].forEach(neighbour => {
+        if (!visited[neighbour]) {
+          visited[neighbour] = true;
+          stack.push(neighbour);
+        }
+      });
+    }
+
+    return result;
+  }
 }
 
 const graph = new Graph();
@@ -81,6 +104,7 @@ graph.addEdge('D', 'F');
 graph.addEdge('E', 'F');
 
 graph.depthFirstRecursive('A'); // [ 'A', 'B', 'D', 'E', 'C', 'F' ]
+graph.depthFirstIterative('A'); // [ 'A', 'C', 'E', 'F', 'D', 'B' ]
 
 //          A
 //        /   \
