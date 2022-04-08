@@ -5,10 +5,10 @@
 function bubbleSort(arr) {
   let noSwaps; // Optimized with noSwaps
 
-  for (let i = arr.length; i > 0; i--) {
+  for (let i = arr.length - 1; i > 0; i--) {
     noSwaps = true;
 
-    for (let j = 0; j < i - 1; j++) {
+    for (let j = 0; j < i; j++) {
       if (arr[j] > arr[j + 1]) {
         let temp = arr[j];
         arr[j] = arr[j + 1];
