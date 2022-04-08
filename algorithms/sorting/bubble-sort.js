@@ -23,4 +23,5 @@ function bubbleSort(arr) {
   return arr;
 }
 
-bubbleSort([8, 1, 2, 3, 4, 5, 6, 7]);
+bubbleSort([0, 2, 34, 22, 10, 19, 17]);
+// [0, 2, 10, 17, 19, 22, 34]
