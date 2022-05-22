@@ -27,3 +27,4 @@
 - [Selection Sort](algorithms/sorting/selection-sort.js)
 - [Insertion Sort](algorithms/sorting/insertion-sort.js)
 - [Merge Sort](algorithms/sorting/merge-sort.js)
+- [Quick Sort](algorithms/sorting/quick-sort.js)
